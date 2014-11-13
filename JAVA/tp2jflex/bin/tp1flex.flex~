@@ -1,0 +1,11 @@
+%%
+%class tp1flex
+%int
+%{
+int nbV=0,nbC=0,nbP=0;
+%}
+%%
+[aoeuiAOIUE] {nbV++;}
+[a-zA-Z] {nbC++;}
+[.,;:] {nbP++;}
+.|\n {}
