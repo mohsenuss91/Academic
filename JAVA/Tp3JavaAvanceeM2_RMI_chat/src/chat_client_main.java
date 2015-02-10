@@ -20,9 +20,10 @@ public class chat_client_main {
 		Registry reg=LocateRegistry.getRegistry("localhost",1099);
 		server_interface chatserver=(server_interface) reg.lookup(chat_server_url);
 		
+		
 		System.out.println("**Client**");
-		int i=0;
-		new Thread(new client("client"+i++,chatserver)).start();
+		
+		new Thread(new client("client",chatserver)).start();
 		
 
 	}
