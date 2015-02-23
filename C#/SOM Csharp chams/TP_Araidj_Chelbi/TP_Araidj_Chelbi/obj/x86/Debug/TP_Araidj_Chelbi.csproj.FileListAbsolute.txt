@@ -1,0 +1,30 @@
+c:\users\berbegue-pc\documents\visual studio 2010\Projects\TP_Araidj_Chelbi\TP_Araidj_Chelbi\bin\Debug\TP_Araidj_Chelbi.exe
+c:\users\berbegue-pc\documents\visual studio 2010\Projects\TP_Araidj_Chelbi\TP_Araidj_Chelbi\bin\Debug\TP_Araidj_Chelbi.pdb
+c:\users\berbegue-pc\documents\visual studio 2010\Projects\TP_Araidj_Chelbi\TP_Araidj_Chelbi\obj\x86\Debug\TP_Araidj_Chelbi.Form1.resources
+c:\users\berbegue-pc\documents\visual studio 2010\Projects\TP_Araidj_Chelbi\TP_Araidj_Chelbi\obj\x86\Debug\TP_Araidj_Chelbi.Properties.Resources.resources
+c:\users\berbegue-pc\documents\visual studio 2010\Projects\TP_Araidj_Chelbi\TP_Araidj_Chelbi\obj\x86\Debug\TP_Araidj_Chelbi.csproj.GenerateResource.Cache
+c:\users\berbegue-pc\documents\visual studio 2010\Projects\TP_Araidj_Chelbi\TP_Araidj_Chelbi\obj\x86\Debug\TP_Araidj_Chelbi.exe
+c:\users\berbegue-pc\documents\visual studio 2010\Projects\TP_Araidj_Chelbi\TP_Araidj_Chelbi\obj\x86\Debug\TP_Araidj_Chelbi.pdb
+C:\Users\Berbegue-Pc\Documents\Visual Studio 2010\Projects\TP_Araidj_Chelbi\TP_Araidj_Chelbi\bin\Debug\AForge.dll
+C:\Users\Berbegue-Pc\Documents\Visual Studio 2010\Projects\TP_Araidj_Chelbi\TP_Araidj_Chelbi\bin\Debug\AForge.Neuro.dll
+C:\Users\Berbegue-Pc\Documents\Visual Studio 2010\Projects\TP_Araidj_Chelbi\TP_Araidj_Chelbi\bin\Debug\AForge.Genetic.dll
+C:\Users\Berbegue-Pc\Documents\Visual Studio 2010\Projects\TP_Araidj_Chelbi\TP_Araidj_Chelbi\bin\Debug\AForge.Math.dll
+C:\Users\Berbegue-Pc\Documents\Visual Studio 2010\Projects\TP_Araidj_Chelbi\TP_Araidj_Chelbi\bin\Debug\AForge.xml
+C:\Users\Berbegue-Pc\Documents\Visual Studio 2010\Projects\TP_Araidj_Chelbi\TP_Araidj_Chelbi\bin\Debug\AForge.Neuro.xml
+C:\Users\Berbegue-Pc\Documents\Visual Studio 2010\Projects\TP_Araidj_Chelbi\TP_Araidj_Chelbi\bin\Debug\AForge.Genetic.xml
+C:\Users\Berbegue-Pc\Documents\Visual Studio 2010\Projects\TP_Araidj_Chelbi\TP_Araidj_Chelbi\bin\Debug\AForge.Math.xml
+C:\Users\Berbegue-Pc\Documents\Visual Studio 2010\Projects\TP_Araidj_Chelbi\TP_Araidj_Chelbi\obj\x86\Debug\TP_Araidj_Chelbi.csprojResolveAssemblyReference.cache
+F:\TP_Araidj_Chelbi\TP_Araidj_Chelbi\obj\x86\Debug\TP_Araidj_Chelbi.exe
+F:\TP_Araidj_Chelbi\TP_Araidj_Chelbi\obj\x86\Debug\TP_Araidj_Chelbi.pdb
+F:\TP_Araidj_Chelbi\TP_Araidj_Chelbi\bin\Debug\TP_Araidj_Chelbi.exe
+F:\TP_Araidj_Chelbi\TP_Araidj_Chelbi\bin\Debug\TP_Araidj_Chelbi.pdb
+F:\TP_Araidj_Chelbi\TP_Araidj_Chelbi\bin\Debug\AForge.Genetic.dll
+F:\TP_Araidj_Chelbi\TP_Araidj_Chelbi\bin\Debug\AForge.Math.dll
+F:\TP_Araidj_Chelbi\TP_Araidj_Chelbi\bin\Debug\AForge.xml
+F:\TP_Araidj_Chelbi\TP_Araidj_Chelbi\bin\Debug\AForge.Neuro.xml
+F:\TP_Araidj_Chelbi\TP_Araidj_Chelbi\bin\Debug\AForge.Genetic.xml
+F:\TP_Araidj_Chelbi\TP_Araidj_Chelbi\bin\Debug\AForge.Math.xml
+F:\TP_Araidj_Chelbi\TP_Araidj_Chelbi\obj\x86\Debug\TP_Araidj_Chelbi.csprojResolveAssemblyReference.cache
+F:\TP_Araidj_Chelbi\TP_Araidj_Chelbi\obj\x86\Debug\TP_Araidj_Chelbi.Form1.resources
+F:\TP_Araidj_Chelbi\TP_Araidj_Chelbi\obj\x86\Debug\TP_Araidj_Chelbi.Properties.Resources.resources
+F:\TP_Araidj_Chelbi\TP_Araidj_Chelbi\obj\x86\Debug\TP_Araidj_Chelbi.csproj.GenerateResource.Cache
