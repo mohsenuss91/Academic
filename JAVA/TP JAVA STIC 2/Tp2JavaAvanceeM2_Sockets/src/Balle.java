@@ -1,5 +1,3 @@
-
-
 import java.awt.Graphics;
 import java.awt.Graphics2D;
 import java.awt.event.ActionEvent;
@@ -7,25 +5,6 @@ import java.awt.event.ActionListener;
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
 import java.awt.geom.Ellipse2D;
-
-
-import java.io.Serializable;
-
-import javax.swing.JFrame;
-import javax.swing.JPanel;
-import javax.swing.Timer;
-
-import java.awt.Graphics;
-import java.awt.Graphics2D;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
-import java.awt.event.KeyEvent;
-import java.awt.event.KeyListener;
-import java.awt.geom.Ellipse2D;
-
-
-
-
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.Timer;
@@ -39,8 +18,7 @@ public class Balle extends JPanel implements ActionListener,KeyListener
     private static final long serialVersionUID = 1L;
     
     // for Client-Side
-    private BallListener ballListener;
-    
+    private BallListener ballListener;    
     double x=0, y=0, coor_x=0, coor_y=0;
     //A facility for threads to schedule tasks for future execution in a background thread.
     Timer t=new Timer(2, this);
@@ -48,6 +26,7 @@ public class Balle extends JPanel implements ActionListener,KeyListener
     /*Constructeur*/
     public Balle()
     {
+    	//timer start
         t.start();
         //Adds the specified key listener to receive key events from this component.
         addKeyListener(this);
@@ -55,10 +34,8 @@ public class Balle extends JPanel implements ActionListener,KeyListener
         setFocusable(true);
         //Sets whether focus traversal keys are enabled for this Component.
         setFocusTraversalKeysEnabled(true);
-
-
     }
-    
+ //constructeur pour coté client
     public Balle(BallListener bListener)
     {
     	this.ballListener = bListener;
@@ -69,13 +46,9 @@ public class Balle extends JPanel implements ActionListener,KeyListener
         setFocusable(true);
         //Sets whether focus traversal keys are enabled for this Component.
         setFocusTraversalKeysEnabled(true);
-
-
     }
 
-
-
-    /*Calls the UI delegate's paint method, if the UI delegate is non-null.*/
+/*Calls the UI delegate's paint method, if the UI delegate is non-null.*/
     public void paintComponent(Graphics g)
     {
         super.paintComponent(g);
@@ -83,19 +56,18 @@ public class Balle extends JPanel implements ActionListener,KeyListener
         //Fills the interior of a Shape using the settings of the Graphics2D context.
         g1.fill(new Ellipse2D.Double(x,y,40,40)); //The Double class defines an ellipse specified in double precision.
 
-
     }
 
-    /*Invoked when an action occurs.*/
+/*Invoked when an action occurs.*/
     public void actionPerformed(ActionEvent e)
-    {
-    	
+    {    	
     	actionPreforme();
         repaint(); //Repaints this component.
     }
     
-    
-    private void actionPreforme(){
+//bords controle    
+    private void actionPreforme()
+    {
         if(x<0){coor_x=0; x=0;}
         if(x>Balle.f.getWidth()-40){coor_x=0; x=Balle.f.getWidth()-55;}
 
@@ -111,10 +83,11 @@ public class Balle extends JPanel implements ActionListener,KeyListener
         repaint(); //Repaints this component.
     }
     
-    
-    public void changeLocation(double x,double y) {
-    	
-    	if (x != this.x || y != this.y) {
+//changer la localisation de la balle de l'esclave par le maitre    
+    public void changeLocation(double x,double y) 
+    {    	
+    	if (x != this.x || y != this.y) 
+    	{
     		
         	this.x = x;
         	this.y = y;  
@@ -126,15 +99,11 @@ public class Balle extends JPanel implements ActionListener,KeyListener
  
     }
 
-
-    /*HAUT*/
+   /*HAUT*/
     public void up()
     {
-
             coor_y=-1;
             coor_x=0;
-
-
     }
     /*BAS*/
     public void down()
@@ -164,7 +133,6 @@ public class Balle extends JPanel implements ActionListener,KeyListener
 
         if(code==KeyEvent.VK_UP) //Constant for the non-numpad up arrow key.
         {
-
             up();
         }
 
@@ -184,7 +152,7 @@ public class Balle extends JPanel implements ActionListener,KeyListener
         }
     }
 
-    /*nvoked when a key has been typed.*/
+   /*nvoked when a key has been typed.*/
     public void keyTyped(KeyEvent e){}
 
     /*Invoked when a key has been released.*/
@@ -193,11 +161,11 @@ public class Balle extends JPanel implements ActionListener,KeyListener
         coor_x=0;
         coor_y=0;
     }
+   
     static JFrame f=new JFrame();
     
     public static Balle lancer_la_balle()
     {
-
     	Balle l=new Balle();
         f.add(l);
         f.setVisible(true);
@@ -206,30 +174,23 @@ public class Balle extends JPanel implements ActionListener,KeyListener
         f.setTitle("Balle.");
         f.setSize(300,300);
         return l;
-
     }
     
     public static void lancer_la_balle(BallListener bListener)
     {
-
     	Balle l=new Balle(bListener);
         f.add(l);
         f.setVisible(true);
         //Sets the operation that will happen by default when the user initiates a "close" on this frame.
         f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         f.setTitle("Balle.");
-        f.setSize(300,300);
-        
-        
-
-
+        f.setSize(300,300);               
     }
     
-    
-    public interface BallListener{
-    	
+    //interface BallListener    
+    public interface BallListener
+    {    	
     	public void changedLocation(double x, double y);
-    	
     } 
 
 }

@@ -4,7 +4,8 @@ import java.awt.geom.*;
 import java.util.ArrayList;
 import javax.swing.*;
 
-public class balle extends JFrame {
+public class balle extends JFrame 
+{
 /*Bouttons*/
 private static final long serialVersionUID = 1L;
 private JButton ajouter = new JButton("Ajouter");
@@ -22,6 +23,7 @@ public balle()
       boutons.add(ajouter);
       boutons.add(pause);
       boutons.add (sortir);
+  //ajouter les actions de chaque boutton
       ajouter.addActionListener(new ActionListener() 
       {
          public void actionPerformed(ActionEvent e) 
@@ -37,8 +39,9 @@ public balle()
          {
         	 try 
         	 {
-				Thread.sleep(5000);
-			} catch (InterruptedException e1) 
+				Thread.sleep(10000);
+        	 } 
+        	 catch (InterruptedException e1) 
 			{
 				// TODO Auto-generated catch block
 				e1.printStackTrace();
@@ -53,11 +56,12 @@ public balle()
         	 System.exit(0);
           }
        });
+      
       setSize(600, 600);
       setLocationRelativeTo(null);
       setDefaultCloseOperation(EXIT_ON_CLOSE);
       setVisible(true);
-   }
+ }
    
 // ajouter balle_thread
    private void ajoutballe_thread() 
@@ -99,8 +103,7 @@ public balle()
 //ajouter une balle_thread a la liste des balle_threads
       public void ajout(balle_thread balle_thread) 
       {
-         balle_threads.add(balle_thread);
-         
+         balle_threads.add(balle_thread);         
       }
  //supprimer une balle_thread de la liste des balle_threads
       public void supprime(balle_thread balle_thread)
@@ -128,6 +131,7 @@ public balle()
       {
          x+=dx;
          y+=dy;
+         //controle
          if (x < zone.getMinX()) { x = zone.getMinX();  dx = -dx; }
          if (x+11 >= zone.getMaxX()) { x = zone.getMaxX() - 11;  dx = -dx; }
          if (y < zone.getMinY()) { y = zone.getMinY();  dy = -dy; }
@@ -135,8 +139,7 @@ public balle()
       }
 //dessiner un eclipse
       public Ellipse2D getForme() 
-      {
-    	  
+      {    	  
          return new Ellipse2D.Double(x, y, 25, 25); //dimensions
       }
    }

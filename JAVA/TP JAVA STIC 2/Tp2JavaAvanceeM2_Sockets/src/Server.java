@@ -1,61 +1,61 @@
-
 import java.io.*;
 import java.net.ServerSocket;
 import java.net.Socket;
 import java.net.SocketException;
 
-public class Server {
+public class Server 
+{
     private ServerSocket serverSocket = null;
     private Socket socket = null;
     //private ObjectOutputStream outputStream = null;
 
-
-    public Server() {
+//constructeur 
+    public Server() 
+    {
 
     }
-
-    public void communicate() {
+//communication
+    public void communicate() 
+    {
         try {
-            serverSocket = new ServerSocket(4445);
+            //creer serverSocket
+        	serverSocket = new ServerSocket(4445);
             System.out.println("Serveur demmare..");
             
+            //accepter les clients
             socket = serverSocket.accept();
             int x, y;
-
-            Balle ball = Balle.lancer_la_balle();
-            
-            
+            //lancer la balle du serveur
+            Balle ball = Balle.lancer_la_balle();                       
             Balle.f.setTitle("Balle serveur.");
             
-            while (socket.isConnected()) {
-            	
+            //en cas de connexion recuperer les informations du client
+            while (socket.isConnected()) 
+            {            	
                 x = socket.getInputStream().read();
                 y = socket.getInputStream().read();
-                ball.changeLocation(x, y);
-            	
-            }
-
-            
-            
-            
-            		
-           // outputStream = new ObjectOutputStream(socket.getOutputStream());
-           // outputStream.writeObject(balle_env);
-            
-            
+                //changer la position de la balle
+                ball.changeLocation(x, y);            	
+            }            
             System.out.println("balle envoye");
-
             socket.close();
 
-        } catch (SocketException se) {
+        } 
+        catch (SocketException se) 
+        {
             System.exit(0);
-        } catch (IOException e) {
+        } 
+        catch (IOException e) 
+        {
             e.printStackTrace();
         }
     }
-
-    public static void main(String[] args) {
+    
+//programme principal
+    public static void main(String[] args) 
+    {
     	Server server = new Server();
         server.communicate();
     }
+    
 }

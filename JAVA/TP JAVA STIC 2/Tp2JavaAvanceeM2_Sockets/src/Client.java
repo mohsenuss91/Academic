@@ -1,69 +1,61 @@
-
-
 import java.io.IOException;
-
-//import java.io.ObjectInputStream;
-//import java.io.ObjectOutputStream;
 import java.net.Socket;
 import java.net.SocketException;
 
-public class Client implements Balle.BallListener{
+public class Client implements Balle.BallListener
+{
     private Socket socket = null;
-    //private ObjectInputStream inputStream = null;
-    //private ObjectInputStream inStream = null;
     private boolean isConnected = false;
-
-    public Client() {
+//constructeur
+    public Client() 
+    {
 
     }
-
-    public void communicate() {
-
-    	
-        while (!isConnected) {
+//communication avec le serveur
+    public void communicate() 
+    {
+        while (!isConnected) 
+        {
             try {
-                socket = new Socket("localHost", 4445);
-                System.out.println("Client Connecte");
-                isConnected = true;
-                
-                Balle.lancer_la_balle(this);
-                
-                Balle.f.setTitle("Balle client.");
-
-
-
-
-            } catch (SocketException se) {
-                se.printStackTrace();
-                // System.exit(0);
-            } catch (IOException e) {
+                	socket = new Socket("localHost", 4445);
+                	System.out.println("Client Connecte");
+                	isConnected = true;
+                	//lancer la balle du client
+                	Balle.lancer_la_balle(this);                
+                	Balle.f.setTitle("Balle client.");
+            	} 
+            catch (SocketException se) 
+            {
+                se.printStackTrace();           
+            } 
+            catch (IOException e) 
+            {
                 e.printStackTrace();
             }
         }
     }
     
-	@Override
-	public void changedLocation(double x, double y) {
-		if (socket.isConnected()) {
-			
-			
+//changer la localisation du client
+	public void changedLocation(double x, double y) 
+	{
+		if (socket.isConnected()) 
+		{					
 			try {
-				socket.getOutputStream().write((int)x);
-				socket.getOutputStream().write((int)y);
-			} catch (IOException e) {
-				// TODO Auto-generated catch block
+					//envoyer les coordonnees
+					socket.getOutputStream().write((int)x);
+					socket.getOutputStream().write((int)y);
+				}
+			catch (IOException e) 
+			{			
 				e.printStackTrace();
-			}
-			
-			
+			}						
 		}
 		
 	}
-
-    public static void main(String[] args) {
+//programme principal
+    public static void main(String[] args) 
+    {
     	Client client = new Client();
         client.communicate();
     }
-
-
 }
