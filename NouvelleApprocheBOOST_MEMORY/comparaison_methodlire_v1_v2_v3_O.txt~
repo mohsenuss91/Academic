@@ -1,0 +1,11 @@
+methodlire_v1 >
+		1.83373s
+	-O2 0.70238s
+
+methodlire_v2 >
+		1.9909s
+	-O2	0.807152s
+	
+methodlire_v3 > 
+		1.72595s
+	-O2	0.54734s

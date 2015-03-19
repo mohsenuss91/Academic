@@ -1,0 +1,210 @@
+In file included from methodlire_v14.cpp:18:0:
+./HEADERS/CREATEGRAPHS.h:16:13: error: ‘Graph’ was not declared in this scope
+ std::vector<Graph> creategraphs(std::vector<string> const& fichlines);
+             ^
+./HEADERS/CREATEGRAPHS.h:16:13: note: suggested alternative:
+In file included from ./boost/graph/graph_concepts.hpp:29:0,
+                 from ./boost/graph/detail/adjacency_list.hpp:32,
+                 from ./boost/graph/adjacency_list.hpp:246,
+                 from methodlire_v14.cpp:1:
+./boost/graph/graph_concepts.hpp:57:19: note:   ‘boost::concepts::Graph’
+     BOOST_concept(Graph,(G))
+                   ^
+./boost/concept/detail/concept_def.hpp:20:12: note: in definition of macro ‘BOOST_concept’
+     struct name; /* forward declaration */                                      \
+            ^
+In file included from methodlire_v14.cpp:18:0:
+./HEADERS/CREATEGRAPHS.h:16:18: error: template argument 1 is invalid
+ std::vector<Graph> creategraphs(std::vector<string> const& fichlines);
+                  ^
+./HEADERS/CREATEGRAPHS.h:16:18: error: template argument 2 is invalid
+./HEADERS/CREATEGRAPHS.h:16:45: error: ‘string’ was not declared in this scope
+ std::vector<Graph> creategraphs(std::vector<string> const& fichlines);
+                                             ^
+./HEADERS/CREATEGRAPHS.h:16:45: note: suggested alternative:
+In file included from /usr/include/c++/4.9/iosfwd:39:0,
+                 from /usr/include/c++/4.9/memory:72,
+                 from ./boost/unordered/unordered_set_fwd.hpp:14,
+                 from ./boost/unordered/unordered_set.hpp:17,
+                 from ./boost/unordered_set.hpp:17,
+                 from ./boost/graph/adjacency_list.hpp:21,
+                 from methodlire_v14.cpp:1:
+/usr/include/c++/4.9/bits/stringfwd.h:62:33: note:   ‘std::string’
+   typedef basic_string<char>    string;   
+                                 ^
+In file included from methodlire_v14.cpp:18:0:
+./HEADERS/CREATEGRAPHS.h:16:51: error: template argument 1 is invalid
+ std::vector<Graph> creategraphs(std::vector<string> const& fichlines);
+                                                   ^
+./HEADERS/CREATEGRAPHS.h:16:51: error: template argument 2 is invalid
+./HEADERS/CREATEGRAPHS.h:16:70: error: invalid type in declaration before ‘;’ token
+ std::vector<Graph> creategraphs(std::vector<string> const& fichlines);
+                                                                      ^
+In file included from methodlire_v14.cpp:19:0:
+./HEADERS/EDGEEXIST.h:14:16: error: ‘Graph’ was not declared in this scope
+ bool edgeexist(Graph const& g, int const& fromid, int const& toid, unsigned const& elabel);
+                ^
+./HEADERS/EDGEEXIST.h:14:16: note: suggested alternative:
+In file included from ./boost/graph/graph_concepts.hpp:29:0,
+                 from ./boost/graph/detail/adjacency_list.hpp:32,
+                 from ./boost/graph/adjacency_list.hpp:246,
+                 from methodlire_v14.cpp:1:
+./boost/graph/graph_concepts.hpp:57:19: note:   ‘boost::concepts::Graph’
+     BOOST_concept(Graph,(G))
+                   ^
+./boost/concept/detail/concept_def.hpp:20:12: note: in definition of macro ‘BOOST_concept’
+     struct name; /* forward declaration */                                      \
+            ^
+In file included from methodlire_v14.cpp:19:0:
+./HEADERS/EDGEEXIST.h:14:32: error: expected primary-expression before ‘int’
+ bool edgeexist(Graph const& g, int const& fromid, int const& toid, unsigned const& elabel);
+                                ^
+./HEADERS/EDGEEXIST.h:14:51: error: expected primary-expression before ‘int’
+ bool edgeexist(Graph const& g, int const& fromid, int const& toid, unsigned const& elabel);
+                                                   ^
+./HEADERS/EDGEEXIST.h:14:68: error: expected primary-expression before ‘unsigned’
+ bool edgeexist(Graph const& g, int const& fromid, int const& toid, unsigned const& elabel);
+                                                                    ^
+./HEADERS/EDGEEXIST.h:14:90: error: expression list treated as compound expression in initializer [-fpermissive]
+ bool edgeexist(Graph const& g, int const& fromid, int const& toid, unsigned const& elabel);
+                                                                                          ^
+In file included from methodlire_v14.cpp:20:0:
+./HEADERS/EDGESARENEIGHBOURS.h:14:25: error: ‘Graph’ was not declared in this scope
+ bool edgesareneighbours(Graph const& g, E e1, E e2);
+                         ^
+./HEADERS/EDGESARENEIGHBOURS.h:14:25: note: suggested alternative:
+In file included from ./boost/graph/graph_concepts.hpp:29:0,
+                 from ./boost/graph/detail/adjacency_list.hpp:32,
+                 from ./boost/graph/adjacency_list.hpp:246,
+                 from methodlire_v14.cpp:1:
+./boost/graph/graph_concepts.hpp:57:19: note:   ‘boost::concepts::Graph’
+     BOOST_concept(Graph,(G))
+                   ^
+./boost/concept/detail/concept_def.hpp:20:12: note: in definition of macro ‘BOOST_concept’
+     struct name; /* forward declaration */                                      \
+            ^
+In file included from methodlire_v14.cpp:20:0:
+./HEADERS/EDGESARENEIGHBOURS.h:14:41: error: ‘E’ was not declared in this scope
+ bool edgesareneighbours(Graph const& g, E e1, E e2);
+                                         ^
+./HEADERS/EDGESARENEIGHBOURS.h:14:47: error: ‘E’ was not declared in this scope
+ bool edgesareneighbours(Graph const& g, E e1, E e2);
+                                               ^
+./HEADERS/EDGESARENEIGHBOURS.h:14:51: error: expression list treated as compound expression in initializer [-fpermissive]
+ bool edgesareneighbours(Graph const& g, E e1, E e2);
+                                                   ^
+In file included from methodlire_v14.cpp:21:0:
+./HEADERS/GETPOS.h:16:1: error: ‘string’ does not name a type
+ string getpos(int const& pos, string const& yy);
+ ^
+In file included from methodlire_v14.cpp:22:0:
+./HEADERS/GRAPHCONNEXE.h:14:19: error: ‘Graph’ was not declared in this scope
+ bool graphconnexe(Graph const& g);
+                   ^
+./HEADERS/GRAPHCONNEXE.h:14:19: note: suggested alternative:
+In file included from ./boost/graph/graph_concepts.hpp:29:0,
+                 from ./boost/graph/detail/adjacency_list.hpp:32,
+                 from ./boost/graph/adjacency_list.hpp:246,
+                 from methodlire_v14.cpp:1:
+./boost/graph/graph_concepts.hpp:57:19: note:   ‘boost::concepts::Graph’
+     BOOST_concept(Graph,(G))
+                   ^
+./boost/concept/detail/concept_def.hpp:20:12: note: in definition of macro ‘BOOST_concept’
+     struct name; /* forward declaration */                                      \
+            ^
+In file included from methodlire_v14.cpp:24:0:
+./HEADERS/PRINTGRAPH.h:14:23: error: variable or field ‘printgraph’ declared void
+ void printgraph(Graph const& gr);
+                       ^
+./HEADERS/PRINTGRAPH.h:14:17: error: ‘Graph’ was not declared in this scope
+ void printgraph(Graph const& gr);
+                 ^
+./HEADERS/PRINTGRAPH.h:14:17: note: suggested alternative:
+In file included from ./boost/graph/graph_concepts.hpp:29:0,
+                 from ./boost/graph/detail/adjacency_list.hpp:32,
+                 from ./boost/graph/adjacency_list.hpp:246,
+                 from methodlire_v14.cpp:1:
+./boost/graph/graph_concepts.hpp:57:19: note:   ‘boost::concepts::Graph’
+     BOOST_concept(Graph,(G))
+                   ^
+./boost/concept/detail/concept_def.hpp:20:12: note: in definition of macro ‘BOOST_concept’
+     struct name; /* forward declaration */                                      \
+            ^
+In file included from methodlire_v14.cpp:27:0:
+./HEADERS/VERTICEEXIST.h:14:19: error: ‘Graph’ was not declared in this scope
+ bool verticeexist(Graph const& g, int const& vId, int const& vlabel);
+                   ^
+./HEADERS/VERTICEEXIST.h:14:19: note: suggested alternative:
+In file included from ./boost/graph/graph_concepts.hpp:29:0,
+                 from ./boost/graph/detail/adjacency_list.hpp:32,
+                 from ./boost/graph/adjacency_list.hpp:246,
+                 from methodlire_v14.cpp:1:
+./boost/graph/graph_concepts.hpp:57:19: note:   ‘boost::concepts::Graph’
+     BOOST_concept(Graph,(G))
+                   ^
+./boost/concept/detail/concept_def.hpp:20:12: note: in definition of macro ‘BOOST_concept’
+     struct name; /* forward declaration */                                      \
+            ^
+In file included from methodlire_v14.cpp:27:0:
+./HEADERS/VERTICEEXIST.h:14:35: error: expected primary-expression before ‘int’
+ bool verticeexist(Graph const& g, int const& vId, int const& vlabel);
+                                   ^
+./HEADERS/VERTICEEXIST.h:14:51: error: expected primary-expression before ‘int’
+ bool verticeexist(Graph const& g, int const& vId, int const& vlabel);
+                                                   ^
+./HEADERS/VERTICEEXIST.h:14:68: error: expression list treated as compound expression in initializer [-fpermissive]
+ bool verticeexist(Graph const& g, int const& vId, int const& vlabel);
+                                                                    ^
+In file included from methodlire_v14.cpp:28:0:
+./HEADERS/VERTICESARENEIGHBOURS.h:14:28: error: ‘Graph’ was not declared in this scope
+ bool verticesareneighbours(Graph const& g, int const& a, int const& b);
+                            ^
+./HEADERS/VERTICESARENEIGHBOURS.h:14:28: note: suggested alternative:
+In file included from ./boost/graph/graph_concepts.hpp:29:0,
+                 from ./boost/graph/detail/adjacency_list.hpp:32,
+                 from ./boost/graph/adjacency_list.hpp:246,
+                 from methodlire_v14.cpp:1:
+./boost/graph/graph_concepts.hpp:57:19: note:   ‘boost::concepts::Graph’
+     BOOST_concept(Graph,(G))
+                   ^
+./boost/concept/detail/concept_def.hpp:20:12: note: in definition of macro ‘BOOST_concept’
+     struct name; /* forward declaration */                                      \
+            ^
+In file included from methodlire_v14.cpp:28:0:
+./HEADERS/VERTICESARENEIGHBOURS.h:14:44: error: expected primary-expression before ‘int’
+ bool verticesareneighbours(Graph const& g, int const& a, int const& b);
+                                            ^
+./HEADERS/VERTICESARENEIGHBOURS.h:14:58: error: expected primary-expression before ‘int’
+ bool verticesareneighbours(Graph const& g, int const& a, int const& b);
+                                                          ^
+./HEADERS/VERTICESARENEIGHBOURS.h:14:70: error: expression list treated as compound expression in initializer [-fpermissive]
+ bool verticesareneighbours(Graph const& g, int const& a, int const& b);
+                                                                      ^
+methodlire_v14.cpp: In function ‘int main()’:
+methodlire_v14.cpp:108:99: error: ‘splitstringtolines’ was not declared in this scope
+     std::vector<Graph> dataG = creategraphs(splitstringtolines(readfromfile("testgUe.txt", length)));
+                                                                                                   ^
+methodlire_v14.cpp:114:53: error: ‘graphconnexe’ cannot be used as a function
+         cout<<"graphconnexe?"<<graphconnexe(dataG[0])<<endl;
+                                                     ^
+methodlire_v14.cpp:115:57: error: ‘verticeexist’ cannot be used as a function
+         cout<<"verticeexist?"<<verticeexist(dataG[0],1,4)<<endl;
+                                                         ^
+methodlire_v14.cpp:116:57: error: ‘verticeexist’ cannot be used as a function
+         cout<<"verticeexist?"<<verticeexist(dataG[0],4,2)<<endl;
+                                                         ^
+methodlire_v14.cpp:117:75: error: ‘verticesareneighbours’ cannot be used as a function
+         cout<<"verticesareneighbours?"<<verticesareneighbours(dataG[0],1,4)<<endl;
+                                                                           ^
+methodlire_v14.cpp:118:75: error: ‘verticesareneighbours’ cannot be used as a function
+         cout<<"verticesareneighbours?"<<verticesareneighbours(dataG[0],4,2)<<endl;
+                                                                           ^
+methodlire_v14.cpp:119:54: error: ‘edgeexist’ cannot be used as a function
+         cout<<"edgeexist?"<<edgeexist(dataG[0],1,4,16)<<endl;
+                                                      ^
+methodlire_v14.cpp:120:54: error: ‘edgeexist’ cannot be used as a function
+         cout<<"edgeexist?"<<edgeexist(dataG[0],1,4,12)<<endl;
+                                                      ^
+methodlire_v14.cpp:127:82: error: ‘edgesareneighbours’ cannot be used as a function
+              cout << "edgesareneighbours?" << edgesareneighbours(dataG[0], e1, e2) << endl;
+                      
