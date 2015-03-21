@@ -1,5 +1,5 @@
 #include <EDGESARENEIGHBOURS.h>
-#include <STRUCTS.h>
+
 
 //=============test if those edges are neighbours=============================
     bool edgesareneighbours(Graph const& g, E e1, E e2) {

@@ -1,5 +1,5 @@
 #include <CREATEGRAPHS.h>
-#include <STRUCTS.h>
+
 //==================read string vector and return graphs vector===================
 std::vector<Graph> creategraphs(std::vector<string> const& fichlines) {
     std::vector<Graph> dataG;

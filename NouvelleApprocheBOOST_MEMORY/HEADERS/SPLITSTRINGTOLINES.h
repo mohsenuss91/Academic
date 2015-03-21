@@ -13,6 +13,6 @@
 
 
 
-const char *readfromfile(const char *fname, size_t &length);
+vector<string> splitstringtolines(string const& str);
 
 #endif

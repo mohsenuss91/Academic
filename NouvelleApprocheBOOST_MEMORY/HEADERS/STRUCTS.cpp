@@ -1,7 +1,4 @@
 #include <STRUCTS.h>
-
-
-
 //namespace
 using namespace std;
 using namespace boost;

@@ -1,4 +1,4 @@
-#ifndef CREATEGRAPHS_H   
+#ifndef CREATEGRAPHS_H
 #define CREATEGRAPHS_H
 
 #include <boost/graph/adjacency_list.hpp>
@@ -10,9 +10,8 @@
 #include <string>
 #include <vector>
 #include <algorithm>
-
-
-
+#include "STRUCTS.h"
+using namespace std;
 std::vector<Graph> creategraphs(std::vector<string> const& fichlines);
 
 #endif

@@ -3,6 +3,7 @@
 
 #include <fstream>
 #include <iostream>
+#include <string>
 // for mmap:
 #include <sys/mman.h>
 #include <sys/stat.h>
